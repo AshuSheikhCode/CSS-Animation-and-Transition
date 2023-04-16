@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* box-shadow: 10px 10px green; (X & Y Offset Downward)*/ 
+            /* box-shadow: (offset-x) (offet-y) (blur radius value) (Spread Radius) green; (X & Y Offset Upward) */
+            /* box-shadow: 7px 5px 10px 34px green; */
+            /* box-shadow: inset 3px 5px green; */
+            box-shadow: 3px 5px green, 5px 7px red;
+        }
+        .card h2{
+            text-shadow: 3px 3px 3px #ffffff;
+            text-shadow: -3px -3px 3px #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga itaque aut quisquam officia et quia! Illum
+                beatae architecto, cupiditate eveniet reprehenderit itaque, deserunt a perspiciatis, laboriosam laborum
+                ipsum. Officia ipsum a delectus optio deleniti.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga itaque aut quisquam officia et quia! Illum
+                beatae architecto, cupiditate eveniet reprehenderit itaque, deserunt a perspiciatis, laboriosam laborum
+                ipsum. Officia ipsum a delectus optio deleniti.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is JavaScript Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga itaque aut quisquam officia et quia! Illum
+                beatae architecto, cupiditate eveniet reprehenderit itaque, deserunt a perspiciatis, laboriosam laborum
+                ipsum. Officia ipsum a delectus optio deleniti.</p>
+        </div>
+    </div>
+</body>
+
+</html>

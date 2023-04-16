@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+        }
+        h3{
+            color: white;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            transition: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+            /* Shorthand property of transitions  */
+            /* transition: background-color 1s ease-in 3s; */
+        }
+        #box:hover{
+            background-color: white;
+            border: 3px solid blue;
+            height: 400px;
+            width: 300px;
+            font-size: 24px;
+            border-radius: 100px;
+            font-family: 'Baloo 2', cursive;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a transitions HTML & CSS file</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

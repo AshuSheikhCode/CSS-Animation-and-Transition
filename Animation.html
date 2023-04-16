@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: greenyellow;
+        }
+        .box h1{
+            text-align: center;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            position: relative;
+            /* animation-name: Asad1; */
+            animation-name: Asad2;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: forwards; Animation ja kr atak jayega */
+            /* animation-fill-mode: alternate; animation ja kr khtm hojayega  */
+            /* animation-timing-function: ease-in; shuru ma slow phr tez  */
+            /* animation-timing-function: ease-out; show ma tez phr bad ma slow  */
+            /* animation-timing-function: ease-in-out; shuru ma slow hoga tez jayega phr end ma dobara slow  */
+            animation-fill-mode: alternate;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            animation-direction: alternate;
+            /* animation-direction: reverse; */
+            /* Shorthand of animation  */
+            /* animation: name, duration, timing-function, animation-delay, iteration count, fill mode  */
+            /* animation: asad3 5s ease-in 3s 1 reverse; */
+        }
+
+        @keyframes Asad1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+            }
+        }
+        @keyframes Asad2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{    
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                 left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>I am a box</h1>
+        </div>
+    </div>
+</body>
+
+</html>
